@@ -19,9 +19,13 @@ The following components are recommended prerequisites:
 
 (2) Using the OS terminal, navigate to the working folder and type: `pip install -r requirements.txt`
 
-(3) Using Jupyter Notebook, navigate to the working folder and open the `stroke_prediction.ipynb` notebook
+(3) Unzip into the working folder the `IMDB-trainvalidate.zip` archive
 
-(4) Edit the `path=r'C:\Users\slukyanc\Desktop\Machine Learning with Python Labs'` line by substituting the OS path to your working folder
+(4) Unzip into the `bert-base-cased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes)
+
+(5) Unzip into the `bert-base-uncased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes)
+
+(6) Edit the `path=r'C:\Users\slukyanc\Desktop\Machine Learning with Python Labs'` line by substituting the OS path to your working folder
 
 # Running
 

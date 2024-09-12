@@ -48,10 +48,10 @@ def predict():
     tok2_pred_ds = review_pred.map(tok2_func, batched=True)
     dds2_pred = tok2_pred_ds
     
-    model1_pred = AutoModelForSequenceClassification.from_pretrained(r"C:\Users\serge\eclipse-workspace\Sentiment Analysis\bert-base-uncased")
+    model1_pred = AutoModelForSequenceClassification.from_pretrained(r"C:\Users\serge\eclipse-workspace\NLP\bert-base-uncased")
     trainer1_pred = Trainer(model1_pred,tokenizer=tokz1)
 
-    model2_pred = AutoModelForSequenceClassification.from_pretrained(r"C:\Users\serge\eclipse-workspace\Sentiment Analysis\bert-base-cased")
+    model2_pred = AutoModelForSequenceClassification.from_pretrained(r"C:\Users\serge\eclipse-workspace\NLP\bert-base-cased")
     trainer2_pred = Trainer(model2_pred,tokenizer=tokz2)
     
     sentiment1 = trainer1_pred.predict(dds1_pred)
