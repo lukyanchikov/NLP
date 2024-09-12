@@ -25,12 +25,13 @@ The following components are recommended prerequisites:
 
 (5) Unzip into the `bert-base-uncased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes)
 
-(6) Edit the `path=r'C:\Users\slukyanc\Desktop\Machine Learning with Python Labs'` line by substituting the OS path to your working folder
+(6) Replace the `C:\Users\serge\eclipse-workspace\NLP\` strings in `NLP.py` and `app.py` by substituting the OS path to your working folder
 
 # Running
+## Ad-hoc sentiment prediction requests
 
-(1) Edit the run parameter values in the `#Run by defining the parameter values:` section (scroll down or use Find to reach it)
+(1) Open a `cmd` session and start Flask in it: `C:\Users\serge\eclipse-workspace\NLP\flask run` - change the path to match your working folder
 
-(2) Use the `Run All` command in the `Cell` menu in Jupyter Notebook
+(2) Open another (separate from the previous) `cmd` session and type (or copy/paste from `curl.txt`) a sentiment prediction request: `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` - press Enter to send the request to Flask
 
-(3) Review the outputs produced under the `#Run by defining the parameter values:` section (NB: the very last output - simulation of accuracy - may take 1-2 minutes to appear, the simulation progress is indicated by the `... out of 10 simulation runs completed.` messages displayed in the `#Simulate accuracy:` section)
+(3) Review the response returned by Flask
