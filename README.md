@@ -80,6 +80,8 @@ The following components are recommended prerequisites:
 
 ## Training and testing of sentiment models
 
+IMPORTANT: before running the code mentioned below, please (a) make sure that your CUDA components are installed (see Prerequisites) and (b) you have enough time for training the models (in our case, using a 10% sample of the total training data, it took around 9 hours to train one model).
+
 (1) Execute the following portions from NLP.py:
 
 - Python library imports
