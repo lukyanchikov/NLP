@@ -85,3 +85,10 @@ The following components are recommended prerequisites:
 - Sentiment category distribution in the training dataset:
 
 ![Sentiment category distribution](Train_Figure_1.png)
+
+(3) Once the above code has been executed, you will find the two saved models in the following subfolders (change the path to match your working folder):
+
+- `C:\Users\serge\eclipse-workspace\NLP\bert-base-cased`
+- `C:\Users\serge\eclipse-workspace\Sentiment Analysis\bert-base-uncased`
+
+![Saved model)](Train_Screenshot_1.png)
