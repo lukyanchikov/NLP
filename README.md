@@ -3,6 +3,8 @@
 
 This repository contains a sentiment analysis solution template. `NLP.py` implements training/testing and (batch) predicting. `app.py` implements a Flask endpoint definition for sending sentiment prediction requests corresponding to ad-hoc reviews. `curl.txt` contains examples of sentiment prediction requests.
 
+The file `IMDB-trainvalidate.csv` used for model training is based on the well-known IMDB extract with 50000 reviews - with the first 100 reviews removed (those 100 reviews can be found in the `IMDB-test.csv file` used for batch predicting).
+
 # Acknowledgements
 
 The following repository has been an accelerator: [https://github.com/haldersourav/imdb-nlp-sentiment](https://github.com/haldersourav/imdb-nlp-sentiment)
