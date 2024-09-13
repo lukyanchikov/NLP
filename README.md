@@ -1,7 +1,7 @@
 # Sentiment Analysis
 # About
 
-This repository contains a sentiment analysis solution template. `NLP.py` implements training/testing and (batch) predicting. `app.py` implements a Flask endpoint definition for sending sentiment prediction requests corresponding to ad-hoc reviews. `curl.txt` contains examples of sentiment predictions requests.
+This repository contains a sentiment analysis solution template. `NLP.py` implements training/testing and (batch) predicting. `app.py` implements a Flask endpoint definition for sending sentiment prediction requests corresponding to ad-hoc reviews. `curl.txt` contains examples of sentiment prediction requests.
 
 # Acknowledgements
 
@@ -40,11 +40,15 @@ The following components are recommended prerequisites:
  
  `flask run`
  
+ ![Flask started](Ad-Hoc_Screenshot_1.png)
+ 
  (2) Open another (separate from the previous) OS terminal session and type (or copy/paste another example from `curl.txt`) a sentiment prediction request (press Enter to send the request to Flask):
  
  `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` 
 
-(3) Review the response returned by Flask
+(3) Review the response returned by Flask:
+
+![Flask response](Ad-Hoc_Screenshot_2.png)
 
 ## Batch sentiment prediction
 
