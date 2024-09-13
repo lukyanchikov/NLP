@@ -1,7 +1,7 @@
 # Sentiment Analysis
 # About
 
-This repository contains a sentiment analysis solution template. `NLP.py` implements training/testing and (batch) predicting. `app.py` implements a Flask endpoint definition for sending sentiment prediction requests corresponding to single reviews. `curl.txt` contains examples of sentiment predictions requests.
+This repository contains a sentiment analysis solution template. `NLP.py` implements training/testing and (batch) predicting. `app.py` implements a Flask endpoint definition for sending sentiment prediction requests corresponding to ad-hoc reviews. `curl.txt` contains examples of sentiment predictions requests.
 
 # Acknowledgements
 
@@ -12,6 +12,8 @@ The following repository has been an accelerator: [https://github.com/haldersour
 The following components are recommended prerequisites:
 
 - [Python 3.6.7](https://www.python.org/downloads/release/python-367/)
+- [NVIDIA CUDA Toolkit 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
+- [NVIDIA cuDNN](https://developer.nvidia.com/cudnn)
 
 # Installation
 
@@ -25,7 +27,7 @@ The following components are recommended prerequisites:
 
 (5) Unzip into the `bert-base-uncased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes)
 
-(6) Replace the `C:\Users\serge\eclipse-workspace\NLP\` strings in `NLP.py` and `app.py` by substituting the OS path to your working folder
+(6) Substitute the `C:\Users\serge\eclipse-workspace\NLP\` strings in `NLP.py` and `app.py` with the OS path to your working folder
 
 # Running
 ## Ad-hoc sentiment prediction requests
@@ -36,6 +38,24 @@ The following components are recommended prerequisites:
  
  `flask run`
  
- (2) Open another (separate from the previous) OS terminal session and type (or copy/paste from `curl.txt`) a sentiment prediction request: `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` - press Enter to send the request to Flask
+ (2) Open another (separate from the previous) OS terminal session and type (or copy/paste another example from `curl.txt`) a sentiment prediction request (press Enter to send the request to Flask):
+ 
+ `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` 
 
 (3) Review the response returned by Flask
+
+## Batch sentiment prediction
+
+(1) Execute the following portions from NLP.py:
+
+- imports
+- `# Common steps and functions`
+- `# Predicting`
+
+## Training and testing of sentiment models
+
+(1) Execute the following portions from NLP.py:
+
+- imports
+- `# Common steps and functions`
+- `# Training/testing`
