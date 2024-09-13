@@ -9,6 +9,8 @@ The file `IMDB-trainvalidate.csv` used for model training is based on the well-k
 
 The following repository has been an accelerator: [https://github.com/haldersourav/imdb-nlp-sentiment](https://github.com/haldersourav/imdb-nlp-sentiment)
 
+In the following [video](https://youtu.be/-gyvCTBHh-0?t=1563) we explain how similar mechanisms can work autonomously. 
+
 # Prerequisites
 
 The following components are recommended prerequisites:
