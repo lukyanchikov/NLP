@@ -30,14 +30,12 @@ The following components are recommended prerequisites:
 # Running
 ## Ad-hoc sentiment prediction requests
 
-(1) Open an OS terminal session and start Flask in it:
+(1) Open an OS terminal session and start Flask in it (change the path to match your working folder):
 
  `cd C:\Users\serge\eclipse-workspace\NLP`
  
  `flask run`
  
- - change the path to match your working folder
-
-(2) Open another (separate from the previous) `cmd` session and type (or copy/paste from `curl.txt`) a sentiment prediction request: `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` - press Enter to send the request to Flask
+ (2) Open another (separate from the previous) `cmd` session and type (or copy/paste from `curl.txt`) a sentiment prediction request: `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` - press Enter to send the request to Flask
 
 (3) Review the response returned by Flask
