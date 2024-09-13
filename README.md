@@ -33,6 +33,7 @@ The following components are recommended prerequisites:
 (1) Open an OS terminal session and start Flask in it:
 
  `cd C:\Users\serge\eclipse-workspace\NLP`
+ 
  `flask run`
  
  - change the path to match your working folder
