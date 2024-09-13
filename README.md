@@ -34,7 +34,7 @@ The following components are recommended prerequisites:
 # Running
 ## Ad-hoc sentiment prediction requests
 
-(1) Open an OS terminal session and start Flask in it (change the path to match your working folder):
+(1) Open an OS terminal session, navigate to your working folder and start Flask in it (change the path to match your working folder):
 
  `cd C:\Users\serge\eclipse-workspace\NLP`
  
