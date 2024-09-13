@@ -66,6 +66,12 @@ The following components are recommended prerequisites:
 
 ![Accuracy metrics bertbasecased)](Predict_Figure_3.png)
 
+(3) Once the above code has been executed, you will find the labels predicted by each of the two models in the following file (change the path to match your working folder):
+
+- `C:\Users\serge\eclipse-workspace\NLP\IMDB-results.csv`:
+
+![Labels predicted)](Predict_Screenshot_1.png)
+
 ## Training and testing of sentiment models
 
 (1) Execute the following portions from NLP.py:
@@ -73,3 +79,9 @@ The following components are recommended prerequisites:
 - Python library imports
 - `# Common steps and functions`
 - `# Training/testing`
+
+(2) While executing the above code, you will generate the following visuals:
+
+- Sentiment category distribution in the training dataset:
+
+![Sentiment category distribution](Train_Figure_1.png)
