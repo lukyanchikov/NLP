@@ -36,6 +36,6 @@ The following components are recommended prerequisites:
  
  `flask run`
  
- (2) Open another (separate from the previous) `cmd` session and type (or copy/paste from `curl.txt`) a sentiment prediction request: `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` - press Enter to send the request to Flask
+ (2) Open another (separate from the previous) OS terminal session and type (or copy/paste from `curl.txt`) a sentiment prediction request: `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` - press Enter to send the request to Flask
 
 (3) Review the response returned by Flask
