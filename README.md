@@ -46,16 +46,30 @@ The following components are recommended prerequisites:
 
 ## Batch sentiment prediction
 
-(1) Execute the following portions from NLP.py:
+(1) Execute the following portions from `NLP.py`:
 
-- imports
+- Python library imports
 - `# Common steps and functions`
 - `# Predicting`
+
+(2) While executing the above code, you will generate the following visuals:
+
+- Sentiment category distribution in the review batch:
+
+![Sentiment category distribution](Predict_Figure_1.png)
+
+- Accuracy metrics for the base uncased BERT model (`bertbaseuncased`):
+
+![Accuracy metrics bertbaseuncased)](Predict_Figure_2.png)
+
+- Accuracy metrics for the base cased BERT model (`bertbasecased`):
+
+![Accuracy metrics bertbasecased)](Predict_Figure_3.png)
 
 ## Training and testing of sentiment models
 
 (1) Execute the following portions from NLP.py:
 
-- imports
+- Python library imports
 - `# Common steps and functions`
 - `# Training/testing`
