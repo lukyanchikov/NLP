@@ -19,15 +19,17 @@ The following components are recommended prerequisites:
 
 (1) Clone/download/unzip this repository in the working folder of your choice (you must have read, write and execute rights in it).
 
-(2) Using the OS terminal, navigate to the working folder and type: `pip install -r requirements.txt`
+(2) Optional: set up a Python environment to isolate this project. We did not set up an environment while developing this project (published as developed).
 
-(3) Unzip into the working folder the `IMDB-trainvalidate.zip` archive
+(3) Using the OS terminal, navigate to the working folder and type: `pip install -r requirements.txt`. The requirements contain a somewhat broader list of Python libraries than the ones used in this project - but nothing excessive.
 
-(4) Unzip into the `bert-base-cased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes)
+(4) Unzip into the working folder the `IMDB-trainvalidate.zip` archive. Recommendation: keep the archive, just in case.
 
-(5) Unzip into the `bert-base-uncased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes)
+(5) Unzip into the `bert-base-cased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes). Recommendation: keep the archive's volumes, just in case.
 
-(6) Substitute the `C:\Users\serge\eclipse-workspace\NLP\` strings in `NLP.py` and `app.py` with the OS path to your working folder
+(6) Unzip into the `bert-base-uncased` subfolder of the working folder the `pytorch_model.zip` archive (represented by multiple volumes). Recommendation: keep the archive's volumes, just in case.
+
+(7) Substitute the `C:\Users\serge\eclipse-workspace\NLP\` strings in `NLP.py` and `app.py` with the OS path to your working folder.
 
 # Running
 ## Ad-hoc sentiment prediction requests
@@ -89,6 +91,6 @@ The following components are recommended prerequisites:
 (3) Once the above code has been executed, you will find the two saved models in the following subfolders (change the path to match your working folder):
 
 - `C:\Users\serge\eclipse-workspace\NLP\bert-base-cased`
-- `C:\Users\serge\eclipse-workspace\Sentiment Analysis\bert-base-uncased`
+- `C:\Users\serge\eclipse-workspace\NLP\bert-base-uncased`
 
 ![Saved model)](Train_Screenshot_1.png)
