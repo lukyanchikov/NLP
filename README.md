@@ -50,7 +50,7 @@ The following components are recommended prerequisites:
  
  `curl localhost:5000/predict -d "[{\"review\": \"I could barely finish it.\"}]" -H "Content-Type: application/json"` 
 
-(3) Review the response returned by Flask:
+(3) Review the responses returned by Flask. "1" response corresponds to "positive" sentiment, "0" - to "negative". In the below example, the responses produced by the two models differ:
 
 ![Flask response](Ad-Hoc_Screenshot_2.png)
 
